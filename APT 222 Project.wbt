@@ -1,0 +1,83 @@
+#VRML_SIM R2023b utf8
+
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/backgrounds/protos/TexturedBackground.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/backgrounds/protos/TexturedBackgroundLight.proto"
+
+WorldInfo {
+}
+Viewpoint {
+  orientation 0.1023694467086958 0.08245379546377762 -0.9913232913606808 1.7939571250555213
+  position 9.075097231265008 26.457809931526707 3.914391725136695
+}
+TexturedBackground {
+}
+TexturedBackgroundLight {
+}
+DEF SPHERE Transform {
+  translation 4.91 0 3.56
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 0.8 0.26 0.6211
+        roughness 0.2
+        metalness 0
+      }
+      geometry Sphere {
+        radius 0.6
+        subdivision 2
+      }
+    }
+  ]
+}
+DEF PLANE Transform {
+  translation -0.98008 1.15809 -0.14374
+  rotation 0 0 1 2.88205
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 0.62133 0.264 0.8
+        roughness 0.2
+        metalness 0
+      }
+      geometry Plane {
+        size 5 5
+      }
+    }
+  ]
+}
+DEF CONE Transform {
+  translation 4.89 0.25 1.53
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 0.486275 0.243137 0.729412
+        roughness 0.2
+        metalness 0
+      }
+      geometry Cone {
+        bottomRadius 1.5
+        height 3
+      }
+    }
+  ]
+}
+DEF BOX Transform {
+  translation 4.66 -1.07659 -2.99952
+  rotation 1 0 0 -1.8325953071795862
+  children [
+    Transform {
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0.584314 0 0.87451
+            roughness 0.2
+            metalness 0
+          }
+          geometry Box {
+            size 5 5 5
+          }
+        }
+      ]
+    }
+  ]
+}
